@@ -1,3 +1,3 @@
 class Scan < ActiveRecord::Base
-  validates_presence_of :uuid, :filename
+  validates_presence_of :id, :filename
 end
