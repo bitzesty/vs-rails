@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/bitzesty/vs-ruby.git
+  revision: ffad9b6aac1ea976e5c4ad12c2e5e1898f9af292
+  specs:
+    virus-scanner (0.0.3)
+      faraday
+      faraday_middleware
+
 PATH
   remote: .
   specs:
@@ -108,14 +116,11 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    virus-scanner (0.0.2)
-      faraday
-      faraday_middleware
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   sqlite3
-  virus-scanner
+  virus-scanner!
   vs_rails!
