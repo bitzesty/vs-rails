@@ -1,6 +1,6 @@
 class ScansController < ApplicationController
   def callback
-    scan = Scan.find(params[:id])
+    scan = Scan.where(uuid: params[:id]).first
 
     if params[:status] == "ok"
       scan.update_attributes(:status, "ok")

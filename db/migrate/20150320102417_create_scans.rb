@@ -1,7 +1,7 @@
 class CreateScans < ActiveRecord::Migration
   def change
     create_table :scans do |t|
-      t.integer :id
+      t.string  :uuid
       t.string  :filename
       t.string  :status
 
