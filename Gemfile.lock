@@ -1,7 +1,15 @@
+GIT
+  remote: git://github.com/bitzesty/vs-ruby.git
+  revision: ffad9b6aac1ea976e5c4ad12c2e5e1898f9af292
+  specs:
+    virus-scanner (0.0.3)
+      faraday
+      faraday_middleware
+
 PATH
   remote: .
   specs:
-    vs_rails (0.0.1)
+    vs_rails (0.0.3)
       rails (~> 4.2.0)
 
 GEM
@@ -45,6 +53,10 @@ GEM
     arel (6.0.0)
     builder (3.2.2)
     erubis (2.7.0)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
     hike (1.2.3)
@@ -58,6 +70,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.11.0)
+    multipart-post (2.0.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     rack (1.6.0)
@@ -109,4 +122,5 @@ PLATFORMS
 
 DEPENDENCIES
   sqlite3
+  virus-scanner!
   vs_rails!

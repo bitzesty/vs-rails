@@ -7,11 +7,11 @@ require "vs_rails/version"
 Gem::Specification.new do |s|
   s.name        = "vs_rails"
   s.version     = VsRails::VERSION
-  s.authors     = ["Mateusz Kozak"]
-  s.email       = ["mateusz@mkozak.pl"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of VsRails."
-  s.description = "TODO: Description of VsRails."
+  s.authors     = ["Bit Zesty Ltd"]
+  s.email       = ["info@bitzesty.com"]
+  s.homepage    = "https://github.com/bitzesty/vs-rails"
+  s.summary     = "Rails engine for Virus Scanner."
+  s.description = "Rails engine for BitZesty's Virus Scanner service."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
