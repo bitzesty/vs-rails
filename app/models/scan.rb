@@ -1,3 +1,8 @@
 class Scan < ActiveRecord::Base
-  validates_presence_of :uuid, :filename
+  validates :uuid, :filename, presence: true
+  validates :uuid, uniqueness: true
+
+  def clean?
+    self.status == "clean"
+  end
 end
