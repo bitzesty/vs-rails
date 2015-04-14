@@ -9,8 +9,8 @@ GIT
 PATH
   remote: .
   specs:
-    vs_rails (0.0.3)
-      rails (~> 4.2.0)
+    vs_rails (0.0.4)
+      rails (= 4.2.0)
 
 GEM
   remote: https://rubygems.org/
