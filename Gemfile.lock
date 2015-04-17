@@ -3,6 +3,7 @@ PATH
   specs:
     vs_rails (0.0.5)
       rails (= 4.2.0)
+      virus-scanner (~> 0.0.4)
 
 GEM
   remote: https://rubygems.org/
@@ -111,5 +112,4 @@ PLATFORMS
 
 DEPENDENCIES
   sqlite3
-  virus-scanner (~> 0.0.4)
   vs_rails!
