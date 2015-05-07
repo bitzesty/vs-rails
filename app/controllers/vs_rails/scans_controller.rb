@@ -5,18 +5,21 @@ class VsRails::ScansController < ApplicationController
   def callback
     scan = Scan.where(uuid: @uuid).first
 
-    if params[:status] == "clean"
-      scan.update_attribute(:status, "clean")
-    elsif params[:status] == "infected"
-      scan.update_attribute(:status, "infected")
+    status = case params[:status]
+    when "clean"
+      "clean"
+    when "infected"
+      "infected"
     else
-      scan.update_attribute(:status, "unknown")
+      "unknown"
     end
+
+    scan.update(vs_id: params[:id], status: status)
 
     render nothing: true
   end
 
   def get_scan_id
-    @uuid = params[:id]
+    @uuid = params[:uuid]
   end
 end
