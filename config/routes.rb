@@ -1,3 +1,3 @@
-VsRails::Engine.routes.draw do
+Rails.application.routes.draw do
   post "/callback", to: "scans#callback"
 end
